@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/a2e6a6b8-08a7-47bd-bc4f-38cc648684e4)# Ex.No:1(A) CLASS & OBJECTS
+# Ex.No:1(A) CLASS & OBJECTS
 
 ## AIM:
 To create a class named 'Student' with String variable 'name' and String variable 'address'.
@@ -47,7 +47,7 @@ public class Main
 
 ## OUTPUT:
 
-![image](https://github.com/user-attachments/assets/345e3cd0-6d10-4cf4-be78-8a9e42e21895)
+<img src ="https://github.com/user-attachments/assets/345e3cd0-6d10-4cf4-be78-8a9e42e21895" width = "50%">
 
 
 ## RESULT:

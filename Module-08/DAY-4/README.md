@@ -1,31 +1,53 @@
-# Ex.No:8(D) BUFFER INPUT/OUTPUT STREAM
+# Ex.No:8(E)  INPUT STREAM READER.
 
 ## AIM:
- To create a java program file for displaying the data from the file after skip method using FileInputStream & BufferedInputStream.
-
+To write a Java program that takes continuous input from the user using InputStreamReader and exits when the input ends with the symbol #. The input is taken inside a do-while loop.
 ## ALGORITHM :
-1.	Import java.io.* and java.util.* for file handling and user input.
-2.	Create a file named sample.txt and write "This is a line of text inside the file." using FileWriter.
-3.	Close the FileWriter to save the content to sample.txt.
-4.	Open sample.txt with a FileInputStream wrapped in a BufferedInputStream for efficient reading.
-5.	Prompt the user to enter the number of bytes to skip using Scanner.
-6.	Skip the specified number of bytes in the file and print the remaining content.
-7.	Close the BufferedInputStream and FileInputStream to release system resources.
-
-
+1.	Start the program.
+2.	Import java.io.*.
+3.	Create an InputStreamReader and wrap it in a BufferedReader.
+    	Use a do-while loop to:
+    	Prompt and read input from the user.
+    	Check if the input ends with #.
+4.	If yes, break the loop.
+    	Otherwise, print the input.
+    	Close the input stream.
+5.	End the program
 
 
 ## PROGRAM:
  ```
-/*
-Program to implement a Buffer Input/Output Stream using Java
-Developed by: 
-RegisterNumber:  
-*/
+
+Program to implement a INPUT STREAM READER
+Developed by: Mohamed Roshan S
+RegisterNumber: 212222040101
+
 ```
 
 ## Sourcecode.java:
+```java
+import java.io.*;
+public class ReadConsole {
 
+   public static void main(String args[]) throws IOException {
+      InputStreamReader cin = null;
+
+      try {
+         cin = new InputStreamReader(System.in);
+       //  System.out.println("Enter characters, 'q' to quit.");
+         char c;
+         do {
+            c = (char) cin.read();
+            System.out.print(c);
+         } while(c != '#');
+      }finally {
+         if (cin != null) {
+            cin.close();
+         }
+      }
+   }
+}
+```
 
 
 
@@ -34,9 +56,9 @@ RegisterNumber:
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/a4807802-ac02-492a-8ae3-3cd30b2dc332)
 
 
 ## RESULT:
-Thus, the java program file for displaying the data from the file after skip method using FileInputStream & BufferedInputStream was executed and done successfully.
-
+Thus, the java program uses InputStreamReader to read input and handles loop termination based on the presence of # at the end of the input string, as specified. 
 
